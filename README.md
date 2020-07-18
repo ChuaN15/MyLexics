@@ -8,7 +8,7 @@ MyLexics is an assistive courseware for Dyslexic children to learn basic Malay l
 ![](https://github.com/ChuaN15/MyLexics/blob/master/Assets/abjad2.gif) 
 
 # Syllables
-![](https://github.com/ChuaN15/MyLexics/blob/master/Assets/perkataan.gif) 
+![](https://github.com/ChuaN15/MyLexics/blob/master/Assets/sukukata.gif) 
 
 # Words
-![](https://github.com/ChuaN15/MyLexics/blob/master/Assets/sukukata.gif) 
+![](https://github.com/ChuaN15/MyLexics/blob/master/Assets/perkataan.gif) 

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutAbjadVokal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.7" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="24.6">
+        <LinearLayout
+            android:layout_weight="8.4"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
+            <ImageButton xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/AbjadVokalUIBackButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="43.6"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart" />
+            <Space
+                android:layout_weight="56.4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <Space
+            android:layout_weight="23.4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <LinearLayout
+            android:layout_weight="39.7"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
+            <Space
+                android:layout_weight="30"
+                android:layout_height="0dp"
+                android:layout_width="match_parent" />
+            <ImageView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/AbjadVokalUITitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+        <Space
+            android:layout_weight="23.4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <LinearLayout
+            android:layout_weight="8.4"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
+            <ImageButton xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/AbjadVokalUIInfoButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="43.6"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitEnd" />
+            <Space
+                android:layout_weight="56.4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12.6" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35.2">
+        <Space
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <ImageButton xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/AbjadVokalUILeftButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <Space
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <HorizontalScrollView
+            android:id="@+id/AbjadVokalhorizontalSV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="70">
+            <LinearLayout
+                android:id="@+id/linearLayoutScrollViewVokal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+        <Space
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <ImageButton xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/AbjadVokalUIRightButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <Space
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="23.9" />
+</LinearLayout>

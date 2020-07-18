@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <LinearLayout
+      android:id="@+id/linearLayoutAbjadBergambarVideoBack"
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:orientation="horizontal" />
+  <LinearLayout
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:orientation="horizontal">
+    <Space
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="16.67" />
+    <VideoView
+        android:id="@+id/videoBergambarView"
+        android:layout_gravity="center"
+        android:layout_weight="66.66"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <Space
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="16.67" />
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/linearLayoutAbjadBergambarVideoFront"
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:orientation="horizontal" />
+  <LinearLayout
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:orientation="horizontal">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="19.8">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="3.7" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="13.9">
+        <ImageButton
+            android:id="@+id/AbjadBergambarVideoBackBtn"
+            android:scaleType="fitStart"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="49" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="51" />
+      </LinearLayout>
+      <Space
+          android:background="@android:color/transparent"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="61.2" />
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17.6" >
+        <ImageButton
+            android:id="@+id/AbjadBergambarVideoLeftBtn"
+            android:layout_width="0dp"
+            android:scaleType="fitEnd"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="80" />
+        <Space
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="20" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="3.7" />
+    </LinearLayout>
+    <Space
+        android:layout_weight="60.4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="19.8">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="3.7" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="13.9">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="51" />
+        <ImageButton
+            android:id="@+id/AbjadBergambarVideoInfoBtn"
+            android:scaleType="fitEnd"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="49" />
+      </LinearLayout>
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="61.2" />
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17.6" >
+        <ImageButton
+            android:id="@+id/AbjadBergambarVideoRightBtn"
+            android:layout_width="0dp"
+            android:scaleType="fitEnd"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="80" />
+        <Space
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="20" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="3.7" />
+    </LinearLayout>
+  </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{B5C2ADA5-42A8-4CC3-AD0D-7C0C75FC17CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MyLexics</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <AssemblyName>MyLexics</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>True</AndroidCreatePackagePerAbi>
+    <Debugger>Xamarin</Debugger>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <EnableProguard>True</EnableProguard>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <EnableProguard>True</EnableProguard>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>True</AndroidCreatePackagePerAbi>
+    <Debugger>Xamarin</Debugger>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <DebugSymbols>False</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Azure.Mobile, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.Mobile.0.12.0\lib\MonoAndroid403\Microsoft.Azure.Mobile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Mobile.Analytics, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.Mobile.Analytics.0.12.0\lib\MonoAndroid403\Microsoft.Azure.Mobile.Analytics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Mobile.Analytics.Android.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.Mobile.Analytics.0.12.0\lib\MonoAndroid403\Microsoft.Azure.Mobile.Analytics.Android.Bindings.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Mobile.Android.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.Mobile.0.12.0\lib\MonoAndroid403\Microsoft.Azure.Mobile.Android.Bindings.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Mobile.Crashes, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.Mobile.Crashes.0.12.0\lib\MonoAndroid403\Microsoft.Azure.Mobile.Crashes.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Mobile.Crashes.Android.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.Mobile.Crashes.0.12.0\lib\MonoAndroid403\Microsoft.Azure.Mobile.Crashes.Android.Bindings.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntraceTimes.cs" />
+    <Compile Include="IntroductionAudioService.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashActivity.cs" />
+    <Compile Include="AbjadSelectionActivity.cs" />
+    <Compile Include="imageLoadingDetails.cs" />
+    <Compile Include="AbjadVokalActivity.cs" />
+    <Compile Include="AbjadVideoActivity.cs" />
+    <Compile Include="SelectionActivity.cs" />
+    <Compile Include="decodeImage.cs" />
+    <Compile Include="vokalKonsonan.cs" />
+    <Compile Include="videoAbjadDetails.cs" />
+    <Compile Include="AbjadKonsonanActivity.cs" />
+    <Compile Include="videoAbjadExampleDetails.cs" />
+    <Compile Include="AbjadVokalBergambarActivity.cs" />
+    <Compile Include="AbjadBergambarVideoActivity.cs" />
+    <Compile Include="videoAbjadBergambarDetails.cs" />
+    <Compile Include="AbjadKonsonanBergambarActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\MyLexics_font.ttf" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\ContactInformation.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ExitDialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\Styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Selection.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AbjadSelection.axml" />
+    <AndroidResource Include="Resources\layout\AbjadVokal.axml" />
+    <AndroidResource Include="Resources\layout\AbjadVideoLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\anim\slide_left.xml" />
+    <AndroidResource Include="Resources\anim\move_left2.xml" />
+    <AndroidResource Include="Resources\anim\move_left3.xml" />
+    <AndroidResource Include="Resources\anim\move_right2.xml" />
+    <AndroidResource Include="Resources\anim\move_right3.xml" />
+    <AndroidResource Include="Resources\layout\SplashLayout.axml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_main_OrangeBG.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_title.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\AbjadBackground.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Aktiviti.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\arrowL.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\arrowR.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Back_Button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Button_start.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Button_vokal.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Konsonan_Button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\KonsonanBergamber_Button_temp.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Option_Help.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Option_info.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Option_Setting.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Perkataan.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\selection.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\setting.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\start.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Sukukata.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Vokal_Button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Vokal_selection.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\VokalBergambar_Button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\SubSubMenu_Background.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Stroke_BrownCircleBG.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Stroke_BrownCircleBGnew.png" />
+    <AndroidResource Include="Resources\anim\zoom_in.xml" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_a.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_b.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_c.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_d.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_e.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_e2.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_f.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_g.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_h.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_i.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_j.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_k.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_l.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_m.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_n.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_o.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_p.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_q.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_r.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_s.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_t.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_u.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_v.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_w.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_x.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_y.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Abjad_Button_z.png" />
+    <AndroidResource Include="Resources\layout\AbjadKonsonan.axml" />
+    <AndroidResource Include="Resources\anim\slide_in_left.xml" />
+    <AndroidResource Include="Resources\anim\slide_in_right.xml" />
+    <AndroidResource Include="Resources\anim\slide_out_left.xml" />
+    <AndroidResource Include="Resources\anim\slide_out_right.xml" />
+    <AndroidResource Include="Resources\drawable-nodpi\api.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\awam.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ayam.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ekor.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\emak.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\emas.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\enam.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\epal.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ibu.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ikan.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\itik.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\obor.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\oren.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\otak.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ubi.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ular.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ulat.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\bagus.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\bas.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\bola.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\cawan.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ceri.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\cicak.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\dadu.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\duri.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\durian.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\feri.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\filem.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\foto.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\gajah.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\gula.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\guli.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\hero.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\hoki.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\hon.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\jala.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\jam.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\jari.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\katak.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\keju.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\kuda.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\laci.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\lilin.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\lori.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\madu.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\mata.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\meja.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\naga.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\nasi.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\nuri.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\paku.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\pen.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\pos.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\roda.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ros.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\roti.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\semut.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\sup.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\susu.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\tali.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\topi.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\tukul.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\van.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\vas.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\video.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\wang.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\wau.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\wayar.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\xray2.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\yoyo.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\yu.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\zip.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\zirafah.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\zoo.png" />
+    <AndroidResource Include="Resources\raw\A.mp4" />
+    <AndroidResource Include="Resources\raw\B.mp4" />
+    <AndroidResource Include="Resources\raw\C.mp4" />
+    <AndroidResource Include="Resources\raw\D.mp4" />
+    <AndroidResource Include="Resources\raw\E.mp4" />
+    <AndroidResource Include="Resources\raw\EA.mp4" />
+    <AndroidResource Include="Resources\raw\F.mp4" />
+    <AndroidResource Include="Resources\raw\G.mp4" />
+    <AndroidResource Include="Resources\raw\H.mp4" />
+    <AndroidResource Include="Resources\raw\I.mp4" />
+    <AndroidResource Include="Resources\raw\J.mp4" />
+    <AndroidResource Include="Resources\raw\K.mp4" />
+    <AndroidResource Include="Resources\raw\L.mp4" />
+    <AndroidResource Include="Resources\raw\M.mp4" />
+    <AndroidResource Include="Resources\raw\N.mp4" />
+    <AndroidResource Include="Resources\raw\O.mp4" />
+    <AndroidResource Include="Resources\raw\P.mp4" />
+    <AndroidResource Include="Resources\raw\Q.mp4" />
+    <AndroidResource Include="Resources\raw\R.mp4" />
+    <AndroidResource Include="Resources\raw\S.mp4" />
+    <AndroidResource Include="Resources\raw\T.mp4" />
+    <AndroidResource Include="Resources\raw\U.mp4" />
+    <AndroidResource Include="Resources\raw\V.mp4" />
+    <AndroidResource Include="Resources\raw\W.mp4" />
+    <AndroidResource Include="Resources\raw\X.mp4" />
+    <AndroidResource Include="Resources\raw\Y.mp4" />
+    <AndroidResource Include="Resources\raw\Z.mp4" />
+    <AndroidResource Include="Resources\raw\example_bas.mp4" />
+    <AndroidResource Include="Resources\raw\example_bola.mp4" />
+    <AndroidResource Include="Resources\raw\example_cawan.mp4" />
+    <AndroidResource Include="Resources\raw\example_ceri.mp4" />
+    <AndroidResource Include="Resources\raw\example_cicak.mp4" />
+    <AndroidResource Include="Resources\raw\example_dadu.mp4" />
+    <AndroidResource Include="Resources\raw\example_duri.mp4" />
+    <AndroidResource Include="Resources\raw\example_feri.mp4" />
+    <AndroidResource Include="Resources\raw\example_filem.mp4" />
+    <AndroidResource Include="Resources\raw\example_foto.mp4" />
+    <AndroidResource Include="Resources\raw\example_gajah.mp4" />
+    <AndroidResource Include="Resources\raw\example_guli.mp4" />
+    <AndroidResource Include="Resources\raw\example_hoki.mp4" />
+    <AndroidResource Include="Resources\raw\example_hon.mp4" />
+    <AndroidResource Include="Resources\raw\example_jala.mp4" />
+    <AndroidResource Include="Resources\raw\example_jam.mp4" />
+    <AndroidResource Include="Resources\raw\example_jari.mp4" />
+    <AndroidResource Include="Resources\raw\example_keju.mp4" />
+    <AndroidResource Include="Resources\raw\example_kuda.mp4" />
+    <AndroidResource Include="Resources\raw\example_laci.mp4" />
+    <AndroidResource Include="Resources\raw\example_lilin.mp4" />
+    <AndroidResource Include="Resources\raw\example_lori.mp4" />
+    <AndroidResource Include="Resources\raw\example_madu.mp4" />
+    <AndroidResource Include="Resources\raw\example_mata.mp4" />
+    <AndroidResource Include="Resources\raw\example_meja.mp4" />
+    <AndroidResource Include="Resources\raw\example_naga.mp4" />
+    <AndroidResource Include="Resources\raw\example_nasi.mp4" />
+    <AndroidResource Include="Resources\raw\example_nuri.mp4" />
+    <AndroidResource Include="Resources\raw\example_paku.mp4" />
+    <AndroidResource Include="Resources\raw\example_pen.mp4" />
+    <AndroidResource Include="Resources\raw\example_pos.mp4" />
+    <AndroidResource Include="Resources\raw\example_qari.mp4" />
+    <AndroidResource Include="Resources\raw\example_roda.mp4" />
+    <AndroidResource Include="Resources\raw\example_ros.mp4" />
+    <AndroidResource Include="Resources\raw\example_roti.mp4" />
+    <AndroidResource Include="Resources\raw\example_sup.mp4" />
+    <AndroidResource Include="Resources\raw\example_susu.mp4" />
+    <AndroidResource Include="Resources\raw\example_tali.mp4" />
+    <AndroidResource Include="Resources\raw\example_topi.mp4" />
+    <AndroidResource Include="Resources\raw\example_tukul.mp4" />
+    <AndroidResource Include="Resources\raw\example_vas.mp4" />
+    <AndroidResource Include="Resources\raw\example_video.mp4" />
+    <AndroidResource Include="Resources\raw\example_wang.mp4" />
+    <AndroidResource Include="Resources\raw\example_wau.mp4" />
+    <AndroidResource Include="Resources\raw\example_xray.mp4" />
+    <AndroidResource Include="Resources\raw\example_yoyo.mp4" />
+    <AndroidResource Include="Resources\raw\example_yu.mp4" />
+    <AndroidResource Include="Resources\raw\example_zip.mp4" />
+    <AndroidResource Include="Resources\raw\example_zirafah.mp4" />
+    <AndroidResource Include="Resources\raw\example_zoo.mp4" />
+    <AndroidResource Include="Resources\raw\examples_api.mp4" />
+    <AndroidResource Include="Resources\raw\examples_awam.mp4" />
+    <AndroidResource Include="Resources\raw\examples_ayam.mp4" />
+    <AndroidResource Include="Resources\raw\examples_ekor.mp4" />
+    <AndroidResource Include="Resources\raw\examples_emak.mp4" />
+    <AndroidResource Include="Resources\raw\examples_emas.mp4" />
+    <AndroidResource Include="Resources\raw\examples_enam.mp4" />
+    <AndroidResource Include="Resources\raw\examples_epal.mp4" />
+    <AndroidResource Include="Resources\raw\examples_ibu.mp4" />
+    <AndroidResource Include="Resources\raw\examples_ikan.mp4" />
+    <AndroidResource Include="Resources\raw\examples_itik.mp4" />
+    <AndroidResource Include="Resources\raw\examples_obor.mp4" />
+    <AndroidResource Include="Resources\raw\examples_oren.mp4" />
+    <AndroidResource Include="Resources\raw\examples_otak.mp4" />
+    <AndroidResource Include="Resources\raw\examples_ubi.mp4" />
+    <AndroidResource Include="Resources\raw\examples_ular.mp4" />
+    <AndroidResource Include="Resources\raw\examples_ulat.mp4" />
+    <AndroidResource Include="Resources\drawable-nodpi\qari.png" />
+    <AndroidResource Include="Resources\layout\AbjadVokalBergambar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable-nodpi\xray.png" />
+    <AndroidResource Include="Resources\layout\AbjadBergambarVideoLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\raw\ayam.mp4" />
+    <AndroidResource Include="Resources\raw\enam.mp4" />
+    <AndroidResource Include="Resources\raw\itik.mp4" />
+    <AndroidResource Include="Resources\raw\oren.mp4" />
+    <AndroidResource Include="Resources\raw\ular.mp4" />
+    <AndroidResource Include="Resources\raw\bagus.mp4" />
+    <AndroidResource Include="Resources\raw\cicak.mp4" />
+    <AndroidResource Include="Resources\raw\duri.mp4" />
+    <AndroidResource Include="Resources\raw\filem.mp4" />
+    <AndroidResource Include="Resources\raw\hero.mp4" />
+    <AndroidResource Include="Resources\raw\jam.mp4" />
+    <AndroidResource Include="Resources\raw\katak.mp4" />
+    <AndroidResource Include="Resources\raw\lilin.mp4" />
+    <AndroidResource Include="Resources\raw\naga.mp4" />
+    <AndroidResource Include="Resources\raw\pen.mp4" />
+    <AndroidResource Include="Resources\raw\qari.mp4" />
+    <AndroidResource Include="Resources\raw\roti.mp4" />
+    <AndroidResource Include="Resources\raw\semut.mp4" />
+    <AndroidResource Include="Resources\raw\tukul.mp4" />
+    <AndroidResource Include="Resources\raw\vas.mp4" />
+    <AndroidResource Include="Resources\raw\wayar.mp4" />
+    <AndroidResource Include="Resources\raw\xray.mp4" />
+    <AndroidResource Include="Resources\raw\yoyo.mp4" />
+    <AndroidResource Include="Resources\raw\zip.mp4" />
+    <AndroidResource Include="Resources\drawable-nodpi\Kenanli_Konsonan_title.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Konsonan_Bergamabr_title.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\Vokal_Bergambar_title.png" />
+    <AndroidResource Include="Resources\layout\AbjadKonsonanBergambar.axml" />
+    <AndroidResource Include="Resources\raw\meja.mp4" />
+    <AndroidResource Include="Resources\raw\gajah.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\selamatdatang.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\spearlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\Activitilock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\Perkataanlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\Sukukatalock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\Kenali_Vokal_Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\ic_clear_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\ic_done_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\Splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-nodpi\Option_survey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\move_left4.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\move_right4.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/cyberlock"
+        android:layout_width="50dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        android:padding="2dp"
+        android:contentDescription="@string/app_name" />
+    <TextView
+        android:id="@+id/LockDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="BELI SEKARANG"
+        android:gravity="center" />
+<ImageView
+        android:src="@drawable/price"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="2dp"
+        android:contentDescription="@string/app_name" />
+</LinearLayout>

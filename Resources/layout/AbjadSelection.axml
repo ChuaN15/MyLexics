@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutAbjadSelection"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="3.7"
+        android:layout_height="0dp"
+        android:layout_width="match_parent" />
+    <LinearLayout
+        android:layout_weight="24.6"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_weight="8.4"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
+            <ImageButton xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/AbjadSelectionUIBackButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="43.6"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart" />
+            <Space
+                android:layout_weight="56.4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <Space
+            android:layout_weight="19.8"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <LinearLayout
+            android:layout_weight="39.7"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
+            <Space
+                android:layout_weight="30"
+                android:layout_height="0dp"
+                android:layout_width="match_parent" />
+            <ImageView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/AbjadSelectionUITitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+        <Space
+            android:layout_weight="31.7"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <LinearLayout
+            android:layout_weight="8.4"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
+            <ImageButton xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/AbjadSelectionUIInfoButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="43.6"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitEnd" />
+            <Space
+                android:layout_weight="56.4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="12.6"
+        android:layout_height="0dp"
+        android:layout_width="match_parent" />
+    <LinearLayout
+        android:layout_weight="45"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_weight="7.1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <ImageButton xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/AbjadSelectionVokalButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16.7"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <LinearLayout
+            android:layout_weight="6.6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <ImageButton xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/AbjadSelectionVokalBergambarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16.7"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <LinearLayout
+            android:layout_weight="6.6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <ImageButton xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/AbjadSelectionKonsonanButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16.7"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <LinearLayout
+            android:layout_weight="6.6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+        <ImageButton xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/AbjadSelectionKonsonanBergambarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16.7"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <LinearLayout
+            android:layout_weight="7.1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="14.1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent" />
+</LinearLayout>

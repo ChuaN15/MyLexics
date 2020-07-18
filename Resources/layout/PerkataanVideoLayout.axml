@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayoutAbjadVideoBack"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16.67" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:layout_weight="66.66"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16.67" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutAbjadVideoFront"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="19.8">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.7" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="13.9">
+                <ImageButton
+                    android:id="@+id/AbjadVideoBackBtn"
+                    android:scaleType="fitStart"
+                    android:background="@android:color/transparent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="49" />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="51" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="61.1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/AbjadVideoExampleLinearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="10dp"
+                    android:layout_weight="20.4">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                    <TextView
+                        android:id="@+id/AbjadVideoExample1"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:maxLines="1"
+                        android:fontFamily="MyLexics_font"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/AbjadVideoExampleLinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="10dp"
+                    android:layout_weight="20.4">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                    <TextView
+                        android:id="@+id/AbjadVideoExample2"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:maxLines="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/AbjadVideoExampleLinearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="10dp"
+                    android:layout_weight="20.4">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                    <TextView
+                        android:id="@+id/AbjadVideoExample3"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/AbjadVideoExampleLinearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="10dp"
+                    android:layout_weight="20.4">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                    <TextView
+                        android:id="@+id/AbjadVideoExample4"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="17.6">
+                <ImageButton
+                    android:id="@+id/AbjadVideoLeftBtn"
+                    android:layout_width="0dp"
+                    android:scaleType="fitEnd"
+                    android:background="@android:color/transparent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80" />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.7" />
+        </LinearLayout>
+        <Space
+            android:layout_weight="60.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="19.8">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.7" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="13.9">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="51" />
+                <ImageButton
+                    android:id="@+id/AbjadVideoInfoBtn"
+                    android:scaleType="fitEnd"
+                    android:background="@android:color/transparent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="49" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="61.1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/AbjadVideoExampleLinearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="10dp"
+                    android:layout_weight="20.4">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                    <TextView
+                        android:id="@+id/AbjadVideoExample5"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/AbjadVideoExampleLinearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="10dp"
+                    android:layout_weight="20.4">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                    <TextView
+                        android:id="@+id/AbjadVideoExample6"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:maxLines="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/AbjadVideoExampleLinearLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="10dp"
+                    android:layout_weight="20.4">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                    <TextView
+                        android:id="@+id/AbjadVideoExample7"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:maxLines="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/AbjadVideoExampleLinearLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="10dp"
+                    android:layout_weight="20.4">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                    <TextView
+                        android:id="@+id/AbjadVideoExample8"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:maxLines="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60" />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="17.6">
+                <ImageButton
+                    android:id="@+id/AbjadVideoRightBtn"
+                    android:layout_width="0dp"
+                    android:scaleType="fitEnd"
+                    android:background="@android:color/transparent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80" />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.7" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

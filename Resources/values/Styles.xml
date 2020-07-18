@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>  
+<resources>  
+  <style name="Theme.Splash" parent="android:Theme.NoTitleBar.Fullscreen">
+    <item name="android:windowNoTitle">true</item>
+  </style> 
+  <style name="Theme.Menu" parent="android:Theme.NoTitleBar.Fullscreen">  
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:alertDialogTheme">@style/AppTheme_AlertDialog</item>
+  </style>
+  <style name="AppTheme_AlertDialog" parent="@android:style/Theme.Material.Light.Dialog">
+    <item name="android:windowBackground">@android:color/white</item>
+    <item name="android:gravity">center</item>
+  </style>
+</resources> 
